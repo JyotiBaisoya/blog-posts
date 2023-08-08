@@ -10,7 +10,7 @@ const CreatePost = () => {
     e.preventDefault();
 
     try {
-      const response = await fetch('http://127.0.0.1:4500/posts/create', {
+      const response = await fetch('http://16.171.227.86:4500/posts/create', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

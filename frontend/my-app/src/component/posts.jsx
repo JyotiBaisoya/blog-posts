@@ -14,7 +14,7 @@ const Posts = () => {
 
     const fetchPosts = async () => {
         try {
-            const response = await fetch('http://127.0.0.1:4500/posts');
+            const response = await fetch('http://16.171.227.86:4500/posts');
             const data = await response.json();
             setPosts(data);
         } catch (error) {
@@ -41,7 +41,7 @@ const Posts = () => {
         const text = inputElement.value;
 
         try {
-            const response = await fetch(`http://127.0.0.1:4500/${postId}/comments/create`, {
+            const response = await fetch(`http://16.171.227.86:4500/${postId}/comments/create`, {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',

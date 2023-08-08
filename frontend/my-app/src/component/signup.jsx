@@ -24,7 +24,7 @@ const Signup = () => {
             Swal.fire('provide the password');
         } else {
             try {
-                const response = await fetch('http://127.0.0.1:4500/user/register', {
+                const response = await fetch('http://16.171.227.86:4500/user/register', {
                     method: 'POST',
                     headers: {
                         'Content-Type': 'application/json',
